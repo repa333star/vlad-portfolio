@@ -1,65 +1,72 @@
+/* === Base Reset === */
 body {
-  font-family: sans-serif, sans-serif;
-  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: black;
-  color: white;
-
-  /* background-color:white;
-  color: black; */
-
-  max-width: 712px;
-  margin: 0 auto 0 auto;
-  padding: 16px;
+  background-color: #fdfdfd; /* светлый фон */
+  color: #222; /* почти черный текст */
+  line-height: 1.6;
 }
 
+/* === Header === */
 header {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  line-height: 1;
-  gap: 16px;
-  margin-bottom: 24px;
-}
-nav{
-  display: flex;
-  width: 100%;
-  align-items: center;
-  gap: 16px;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 header img {
   border-radius: 50%;
+  border: 2px solid #fd6500;
 }
 
-h1 {
-  font-size: 24px;
-  line-height: 0;
-}
-a{
-    color: blue;
-    font-style: italic;
-    text-decoration: none;
-    transition: all 1s ease-in;
-
-}
-a:hover{
-    text-decoration: underline;
-}
-section {
-  line-height: 1.4;
-  margin: 24px 0;
-}
-ul {
-    list-style: none;
-    padding: 0;
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
 }
 
-ul li {
-    margin: 0.5rem 0;
+header p {
+  font-size: 1rem;
+  color: #fd6500;
+  margin: 0;
 }
-ul li span {
-  color: blue;
+
+/* === Links === */
+a {
+  color: #fd6500;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Titles === */
+h2, h3, h4 {
+  color: #333;
+  margin-top: 2rem;
+}
+
+/* === Content Layout === */
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* === Buttons (если нужны) === */
+button {
+  background-color: #fd6500;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e15500;
 }
